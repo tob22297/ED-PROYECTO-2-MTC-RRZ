@@ -57,5 +57,24 @@ void loop() {
         estadoFuturo = e2;
       break;
   }
+  
+
+  //salidas en cada estado
+  switch(estadoActual){
+    case e0:
+      lcd.setCursor(0,0);
+      lcd.clear();
+      break;
+    case e1:
+      lcd.setCursor(0,0);
+      lcd.print(aviso1);
+      break;
+    case e2:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print(aviso2);
+      break;
+  }
+
 
 
