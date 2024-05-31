@@ -84,6 +84,11 @@ void loop() {
   int ang1 = map(poten1, 0, 1023, 0, 179);
   int ang2 = map(poten2, 0, 1023, 0, 179);
 
+// Enviar valores mapeados por el puerto serie
+  Serial.print(ang1);
+  Serial.print(",");
+  Serial.print(ang2);
+  Serial.println(); 
 
 
 
