@@ -26,3 +26,8 @@ void setup() {
   lcd.backlight();
 
   Serial.begin(9600);
+
+//entradas
+  pinMode(boton1, INPUT_PULLUP);
+  pinMode(boton2, INPUT_PULLUP);
+}
