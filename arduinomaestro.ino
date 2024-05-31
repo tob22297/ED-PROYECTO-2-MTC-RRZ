@@ -36,4 +36,18 @@ void loop() {
   //Estados switchs
   boolean estadoboton1 = digitalRead(boton1);
   boolean estadoboton2 = digitalRead(boton2);
+//transiciones de estado
+  switch(estadoActual){
+    case e0:
+      if(estadoboton1 == HIGH)
+        estadoFuturo = e1;
+      else
+        estadoFuturo = e0;
+      break;
+    case e1:
+      if(estadoboton2 == HIGH)
+        estadoFuturo = e2;
+      else
+        estadoFuturo = e1;
+      break;
 
