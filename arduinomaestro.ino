@@ -31,3 +31,9 @@ void setup() {
   pinMode(boton1, INPUT_PULLUP);
   pinMode(boton2, INPUT_PULLUP);
 }
+
+void loop() {
+  //Estados switchs
+  boolean estadoboton1 = digitalRead(boton1);
+  boolean estadoboton2 = digitalRead(boton2);
+
