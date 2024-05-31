@@ -90,6 +90,14 @@ void loop() {
   Serial.print(ang2);
   Serial.println(); 
 
+   // actualización de estado
+  unsigned long currentMillis = millis();
+  if (currentMillis - previousMillis >= interval) {
+    estadoActual = estadoFuturo;
+    previousMillis = currentMillis;
+  }
 
+  delay(100);
+}
 
 
