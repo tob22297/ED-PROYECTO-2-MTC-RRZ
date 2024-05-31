@@ -16,3 +16,13 @@ const uint8_t boton2 = 13;
 // mensajes
 String aviso1 = "Falta tiro libre";
 String aviso2 = "Patea";
+
+const long interval = 2000;
+unsigned long previousMillis = 0;
+
+void setup() {
+  //Lcd se prende
+  lcd.init();
+  lcd.backlight();
+
+  Serial.begin(9600);
