@@ -80,6 +80,11 @@ void loop() {
   int poten1 = analogRead(A0);
   int poten2 = analogRead(A1);
 
+ // Mapear los valores de los potenciometros a 0-179 grados
+  int ang1 = map(poten1, 0, 1023, 0, 179);
+  int ang2 = map(poten2, 0, 1023, 0, 179);
+
+
 
 
 
