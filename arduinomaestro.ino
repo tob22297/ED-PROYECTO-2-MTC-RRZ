@@ -50,4 +50,12 @@ void loop() {
       else
         estadoFuturo = e1;
       break;
+    case e2:
+      if(estadoboton1 == LOW)
+        estadoFuturo = e0;
+      else
+        estadoFuturo = e2;
+      break;
+  }
+
 
