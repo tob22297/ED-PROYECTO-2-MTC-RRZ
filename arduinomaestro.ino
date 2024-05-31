@@ -58,7 +58,6 @@ void loop() {
       break;
   }
   
-
   //salidas en cada estado
   switch(estadoActual){
     case e0:
@@ -75,6 +74,12 @@ void loop() {
       lcd.print(aviso2);
       break;
   }
+
+  // Arduino con potenciometros (Arduino 1)
+  // Leer valores de los potenciometros
+  int poten1 = analogRead(A0);
+  int poten2 = analogRead(A1);
+
 
 
 
